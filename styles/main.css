@@ -1,0 +1,31 @@
+.body {
+    background-color: #EFEFEF;
+    margin: 0px;
+
+}
+
+.header {
+    text-align: center;
+    color: #FF3B3F;
+}
+
+.business-list {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #CAEBF2;
+}
+
+.business-single {
+    background-color: #A9A9A9;
+    font-size: 18px;
+    width: 30%;
+    width-min: 200px;
+    border: solid 5px black;
+    padding: 5px;
+}
+
+.listItem {
+    color:darkslategray;
+}
