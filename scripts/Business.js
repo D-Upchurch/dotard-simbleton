@@ -1,4 +1,6 @@
+
 export const Business = (clientObj) => {
+    
     return (
         `<div class="business-single">
             <h2 class="header">${clientObj.companyName}</h2>
@@ -10,7 +12,8 @@ export const Business = (clientObj) => {
                 <li class="listItem">City: ${clientObj.addressCity}</li>
                 <li class="listItem">State: ${clientObj.addressStateCode}</li>
                 <li class="listItem">Zip Code: ${clientObj.addressZipCode}</li>
+                <li class="listItem">Last 5 purchases: ${clientObj.orders[0]}, ${clientObj.orders[1]}, ${clientObj.orders[2]}, ${clientObj.orders[3]}, ${clientObj.orders[4]}</li>
             </ul>
         </div>`
     )
-}
+} 

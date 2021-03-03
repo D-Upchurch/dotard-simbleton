@@ -1,3 +1,5 @@
-import { businessList } from './BusinessList.js'
+import { nyBusinessList, mfBusinessList } from './BusinessList.js'
 
-businessList();
+// businessList();
+nyBusinessList();
+mfBusinessList();

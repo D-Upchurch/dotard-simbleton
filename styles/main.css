@@ -17,6 +17,15 @@
     background-color: #CAEBF2;
 }
 
+.businessList--manufacturing {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #CAEBF2;
+    margin-top: 40px;
+}
+
 .business-single {
     background-color: #A9A9A9;
     font-size: 18px;
