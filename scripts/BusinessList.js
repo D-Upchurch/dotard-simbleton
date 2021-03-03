@@ -1,13 +1,29 @@
 import { getBusiness } from './BusinessData.js'
+import { getNYBusiness, getMFBusiness } from './BusinessData.js'
+
 import { Business } from './Business.js'
 
-export const businessList = () => {
-    const businesses = getBusiness()
+
+
+
+ export const nyBusinessList = () => {
+    const businesses = getNYBusiness()
     const inputLocation = document.querySelector(".business-list")
 
-        let clientItem = "";
-        for (const client of businesses) {
-            clientItem += Business(client);
-        }
-        inputLocation.innerHTML += clientItem;
-}
+        businesses.forEach(
+            (clientObj) => {
+                inputLocation.innerHTML += Business(clientObj)
+            }
+        );
+};
+
+export const mfBusinessList = () => {
+    const businesses = getMFBusiness()
+    const mfInputLocation = document.querySelector(".businessList--manufacturing")
+
+        businesses.forEach(
+            (clientObj) => {
+                mfInputLocation.innerHTML += Business(clientObj)
+            }
+        );
+};
